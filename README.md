@@ -10,7 +10,7 @@ Pytorch
 
 NumPy
 
-Matplotlib 
+Matplotlib
 
 
 ## Getting Started
@@ -21,17 +21,31 @@ Matplotlib
    pip install -r requirements.txt
 3. Place your content and style images along with code in the folder.
 
+## Model Architecture and Scope
+- A **VGG19 model is used for NST** in the following respository, though **Resnet50** & a perpetual loss concept using an Image Transformer neural network which increases the speed of NST and it allows to train the **Image transformer** neural network per content and apply various styles without retraining.
 
-# Options
---content_image:  Path to the content image.
+- Two major loss functions defined in the architecture includes **content loss** and **style loss**; content loss will make content we want in the generated image captured efficiently. It has been observed that **CNN captures information about the content in the higher levels of the network**, whereas the lower levels are more focused on the individual pixel values.
 
---style_image:  Path to the style image.
---output_image: Path to save the stylized output image.
---content_weight: Weight for the content loss (default: 1e3).
---style_weight: Weight for the style loss (default: 1e-2).
---total_variation_weight: Weight for the total variation loss (default: 30).
---num_iterations: Number of optimization iterations (default: 1000).
---optimizer: Optimization algorithm (default: 'adam', options: 'lbfgs' or 'adam').
+- **Style Loss**; major content is **Gram Matrix** which is a representation of style in NST & captures correlations between features in layer, quantifying texture & patterns. As loss function for style has more work than content as multiple layers are involved in computing, Gram matrix helps in capturing essential information.
+
+
+# Hyperparameter Options
+
+-content_image:  Path to the content image (here used , IITR).
+
+-style_image:  Path to the style image (here used, abstract).
+
+-default size: Current size of 300x300 is used for faster training.
+
+-content_weight: Weight for the content loss (default: 1).
+
+-style_weight: Weight for the style loss (default: 1000000).
+
+-num_iterations: Number of optimization iterations (default: 300).
+
+-optimizer: Optimization algorithm (default: 'lbfgs', options: 'lbfgs' or 'adam').
+
+-activation: Activation function (default: 'ReLU', options: 'Leaky ReLU' or 'ELUs' )
 
 ## Acknowledgments
 > This project is based on the work by Gatys et al. in the paper "A Neural Algorithm of Artistic Style" (https://arxiv.org/abs/1508.06576)
