@@ -21,6 +21,7 @@ Matplotlib
 
 # Options
 --content_image:  Path to the content image.
+
 --style_image:  Path to the style image.
 --output_image: Path to save the stylized output image.
 --content_weight: Weight for the content loss (default: 1e3).
