@@ -28,6 +28,12 @@ Matplotlib
 
 - **Style Loss**; major content is **Gram Matrix** which is a representation of style in NST & captures correlations between features in layer, quantifying texture & patterns. As loss function for style has more work than content as multiple layers are involved in computing, Gram matrix helps in capturing essential information.
 
+# Training
+- The training initiates by passing **5 style images** through a pre-trained feature extractor, saving their outputs at different style layers for later comparison. Content images undergo a similar** feature extraction process.** Later, the content images are processed through the transfer network to generate stylized images. The feature extractor is used again to save outputs at both content and style layers.
+
+- The resulting model is then trimmed to include only the layers up to the last content or style loss, and the function returns this model along with lists of style and content losses for later optimization. In essence, this function sets up a neural network tailored for **neural style transfer by incorporating content and style losses**.
+
+- Sequentially adding layers from the pre-trained network while incorporating normalization and defining content and style losses at specific layers. The content and style losses are associated with target features extracted from the content and style images. The **resulting model is then trimmed** to retain only the layers up to the last content or style loss.
 
 # Hyperparameter Options
 
