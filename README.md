@@ -21,7 +21,7 @@ Matplotlib
    pip install -r requirements.txt
 3. Place your content and style images along with code in the folder.
 
-## Model Architecture and Scope
+# Model Architecture and Scope
 - A **VGG19 model is used for NST** in the following respository, though **Resnet50** & a perpetual loss concept using an Image Transformer neural network which increases the speed of NST and it allows to train the **Image transformer** neural network per content and apply various styles without retraining.
 
 - Two major loss functions defined in the architecture includes **content loss** and **style loss**; content loss will make content we want in the generated image captured efficiently. It has been observed that **CNN captures information about the content in the higher levels of the network**, whereas the lower levels are more focused on the individual pixel values.
