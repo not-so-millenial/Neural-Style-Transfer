@@ -1,17 +1,17 @@
-#Neural Style Transfer with TensorFlow
+# Neural Style Transfer with TensorFlow
 
 
-#Overview
-##This repository contains an implementation of Neural Style Transfer using TensorFlow. Neural Style Transfer is an artistic technique that allows the transfer of artistic styles from one image to another. This implementation utilizes a pre-trained VGG19 model to extract features from content and style images, and then optimizes a target image to minimize the content difference and style difference between the target image and the reference images.
+# Overview
+## This repository contains an implementation of Neural Style Transfer using TensorFlow. Neural Style Transfer is an artistic technique that allows the transfer of artistic styles from one image to another. This implementation utilizes a pre-trained VGG19 model to extract features from content and style images, and then optimizes a target image to minimize the content difference and style difference between the target image and the reference images.
 
-#Requirements
+# Requirements
 Python 3.x
 TensorFlow 2.x
 NumPy
 Matplotlib
 
 
-#Getting Started
+# Getting Started
 1. Clone the repository:
    git clone https://github.com/your-username/neural-style-transfer-tensorflow.git
 cd neural-style-transfer-tensorflow
@@ -22,7 +22,7 @@ cd neural-style-transfer-tensorflow
    python style_transfer.py --content_image input/content.jpg --style_image input/style.jpg --output_image output/result.jpg
 
 
-#Options
+# Options
 --content_image: Path to the content image.
 --style_image: Path to the style image.
 --output_image: Path to save the stylized output image.
@@ -32,8 +32,8 @@ cd neural-style-transfer-tensorflow
 --num_iterations: Number of optimization iterations (default: 1000).
 --optimizer: Optimization algorithm (default: 'adam', options: 'lbfgs' or 'adam').
 
-#Acknowledgments
+# Acknowledgments
 This implementation is based on the work by Gatys et al. in the paper "A Neural Algorithm of Artistic Style" (https://arxiv.org/abs/1508.06576).
 
-#License
+# License
 This project is licensed under the MIT License - see the LICENSE file for details.
