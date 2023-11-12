@@ -5,8 +5,11 @@ This repository contains an implementation of Neural Style Transfer using Tensor
 
 ## Requirements
 Python 3.x 
+
 Pytorch 
-NumPy 
+
+NumPy
+
 Matplotlib 
 
 
