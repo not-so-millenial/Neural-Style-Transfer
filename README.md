@@ -4,10 +4,10 @@
 This repository contains an implementation of Neural Style Transfer using TensorFlow. Neural Style Transfer is an artistic technique that allows the transfer of artistic styles from one image to another. This implementation utilizes a pre-trained VGG19 model to extract features from content and style images, and then optimizes a target image to minimize the content difference and style difference between the target image and the reference images.
 
 ## Requirements
-Python 3.x
-Pytorch
-NumPy
-Matplotlib
+Python 3.x 
+Pytorch 
+NumPy 
+Matplotlib 
 
 
 ## Getting Started
