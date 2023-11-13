@@ -35,6 +35,18 @@ Matplotlib
 
 - Sequentially adding layers from the pre-trained network while incorporating normalization and defining content and style losses at specific layers. The content and style losses are associated with target features extracted from the content and style images. The **resulting model is then trimmed** to retain only the layers up to the last content or style loss.
 
+## Example 
+
+> - Content Image
+![](https://i.ibb.co/LgjpkRK/IITR.jpg)
+
+>- Style Image
+![](https://i.ibb.co/Jcv5Yt3/abstract.jpg)
+
+- Generated Image
+![](https://i.ibb.co/XJPmbDD/iitrplusabstract.jpg)
+
+
 # Hyperparameter Options
 
 -content_image:  Path to the content image (here used , IITR).
